@@ -3,8 +3,11 @@
 
 scale = 3;
 
-x = room_width / 2;
+x = room_width / 2 - 20;
 y = room_height / 2;
+
+phy_speed_x = irandom_range(-5, 5);
+phy_speed_y = irandom_range(10, 20);
 
 image_xscale = scale;
 image_yscale = scale;

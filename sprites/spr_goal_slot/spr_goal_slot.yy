@@ -1,8 +1,8 @@
 {
   "$GMSprite":"",
-  "%Name":"spr_cloglog_mouth",
+  "%Name":"spr_goal_slot",
   "bboxMode":0,
-  "bbox_bottom":18,
+  "bbox_bottom":25,
   "bbox_left":0,
   "bbox_right":159,
   "bbox_top":0,
@@ -16,12 +16,12 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":80,
+  "height":26,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"50fa3458-36ad-401f-b42a-ad88005109c9","blendMode":0,"displayName":"default","isLocked":false,"name":"50fa3458-36ad-401f-b42a-ad88005109c9","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_cloglog_mouth",
+  "name":"spr_goal_slot",
   "nineSlice":{
     "$GMNineSliceData":"",
     "bottom":0,
@@ -44,15 +44,15 @@
   },
   "origin":1,
   "parent":{
-    "name":"Cloglog",
-    "path":"folders/Sprites/Characters/Cloglog.yy",
+    "name":"Arena",
+    "path":"folders/Sprites/Arena.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"spr_cloglog_mouth",
+    "%Name":"spr_goal_slot",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -76,7 +76,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_cloglog_mouth",
+    "name":"spr_goal_slot",
     "playback":1,
     "playbackSpeed":0.0,
     "playbackSpeedType":0,
@@ -88,7 +88,7 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"365c1ae2-892f-4549-bb2f-197c1ffe0c53","path":"sprites/spr_cloglog_mouth/spr_cloglog_mouth.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"365c1ae2-892f-4549-bb2f-197c1ffe0c53","path":"sprites/spr_goal_slot/spr_goal_slot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"7634aef0-edbf-4d8b-abe0-12b87e1b29e1","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

@@ -20,7 +20,7 @@ switch (trigger) {
 		
 		break;
 	case 3:
-		instance_create_depth(room_width / 2, 100, 50, obj_cloglog_mouth);
+		instance_create_depth(room_width / 2, -45, 50, obj_cloglog_mouth);
 		trigger++;
 		break;
 	case 5:
@@ -43,7 +43,14 @@ switch (trigger) {
 		break;
 	case 9:
 		var _white_arena = instance_create_depth(0, 0, 90, obj_arena_fade_in);
+		var _black_arena = inst_1BA79673;
+		
 		_white_arena.wait = 32;
+		
+		_black_arena.wait = 32;
+		_black_arena.step = 0;
+		_black_arena.trigger++;
+		
 		trigger++;
 		break;
 }

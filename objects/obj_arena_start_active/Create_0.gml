@@ -11,5 +11,6 @@ image_yscale = 3;
 
 trigger = 0;
 step = 0;
+wait = 0;
 
 controller = inst_7B576619;
