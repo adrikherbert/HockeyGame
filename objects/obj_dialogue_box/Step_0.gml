@@ -24,9 +24,16 @@ if (active && step % type_speed == 0 && l < cur_line_len) {
 	if (step % (type_speed * 4) == 0) audio_play_sound(voice, 100, false);
 }
 
-if (active && mouse_check_button_pressed(mb_left) && l < cur_line_len) {
+if (mode == 0 && mouse_check_button_pressed(mb_left)) {
+	trigger++;
+} else if (mode == 1 && mode_trigger % 2 == 1) {
+	mode_trigger++;
+	trigger++;	
+}
+
+if (mode == 0 && active && trigger % 2 == 1 && l < cur_line_len) {
 	l = cur_line_len - 1;
-} else if (active && mouse_check_button_pressed(mb_left) && l >= cur_line_len) {
+} else if (active && trigger % 2 == 1) {
 	if (cur_line_num >= num_of_lines - 1) {
 		destroy = true;
 		active = false;
@@ -40,5 +47,7 @@ if (active && mouse_check_button_pressed(mb_left) && l < cur_line_len) {
 		step = 0;
 	}
 }
+
+if (trigger % 2 == 1) trigger++;
 
 step++;

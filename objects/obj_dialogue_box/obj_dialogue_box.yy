@@ -31,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_dialogue_box",
-    "path":"sprites/spr_dialogue_box/spr_dialogue_box.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

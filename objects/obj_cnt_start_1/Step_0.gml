@@ -4,9 +4,8 @@
 switch (trigger) {
 	case 1:
 		var _box = instance_create_depth(0, 0, 0, obj_dialogue_box);
-	
-		_box.controller = self;
-		_box.has_controller = true;
+		
+		config_dialogue_box(_box, 0, 0);
 	
 		_box.d[0] = "Greetings...";
 		_box.d[1] = "Human who dares awaken me.";
@@ -51,6 +50,33 @@ switch (trigger) {
 		_black_arena.step = 0;
 		_black_arena.trigger++;
 		
+		game_active = true;
 		trigger++;
 		break;
+	case 10:
+		if (puck_count == 4) {
+			var _box2 = instance_create_depth(0, 0, 0, obj_dialogue_box);
+			
+			config_dialogue_box(_box2, 1, 1);
+			
+			_box2.d[0] = "Yes...";
+			_box2.d[1] = "Delicious.";
+			
+			box = _box2;
+			
+			trigger++;
+		}
+		
+		break;
+	case 11:
+		if (puck_count == 6) {
+			box.mode_trigger++;
+			trigger++;
+		}
+		
+		break;
+}
+
+if (puck_count == stop_pucks_at - 1) {
+	stop_pucks = true;	
 }

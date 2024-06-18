@@ -5,4 +5,5 @@ draw_set_color(c_white);
 draw_set_alpha(image_alpha);
 draw_set_font(fnt_debug);
 
-draw_text_ext(x + 25, y + 20, line, 40, sprite_width);
+draw_self();
+draw_text_ext(x + 25, y + 20, line, 40, width);

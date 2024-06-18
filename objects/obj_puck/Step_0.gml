@@ -9,4 +9,8 @@ if (image_index == 5) {
 	}
 }
 
+if (controller.stop_pucks) {
+	reproduce = false;
+}
+
 step++;

@@ -12,6 +12,13 @@ arena_right = room_width / 2 + arena_width / 2;
 arena_top = 0;
 arena_bottom = arena_height;
 
-step = 0;
+puck_count = 0;
+stop_pucks_at = 10;
+stop_pucks = false;
 
+game_active = false;
+
+step = 0;
 trigger = 0;
+
+box = 0;
